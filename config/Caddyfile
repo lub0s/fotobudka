@@ -1,0 +1,8 @@
+example.com {
+  root * /home/node/public/dist
+  file_server
+}
+
+localhost:2023 {
+  respond "Test 2023"
+}

@@ -1,0 +1,39 @@
+<html lang="”en”">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Fotobudka</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <!-- Camera -->
+    <main id="camera" class="camera">
+        <!-- Camera sensor -->
+        <canvas id="camera-sensor" class="camera-sensor-user"></canvas>
+
+        <!-- Camera view -->
+        <video id="camera-view" class="camera-view-user" autoplay playsinline></video>
+
+        <!-- Camera output -->
+        <img src="//:0" alt="" id="camera-output" class="camera-output-user" />
+
+        <div id="camera-controlls" class="camera-controlls">
+            <!-- Camera trigger -->
+            <button id="camera-trigger" class="camera-trigger">
+                <div id="camera-trigger-inner" class="camera-trigger-inner" />
+            </button>
+            <!-- Camera switch -->
+            <button id="camera-switch" class="camera-switch">
+                <img id="camera-switch-icon" class="camera-switch-icon" src="assets/photo.svg" alt="camera switch" />
+            </button>
+        </div>
+    </main>
+
+    <script type="module" src="src/camera.js"></script>
+</body>
+
+</html>
